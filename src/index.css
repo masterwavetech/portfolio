@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply bg-btn_shadow shadow-btn_shadow w-10 h-10 rounded-half cursor-pointer text-black m-1;
+}
+
+.btn:hover {
+  @apply text-white;
+}
+
+.section-title {
+  @apply text-indigo-600 font-bold uppercase relative px-4 bg-general;
+}
+
+.feture-title {
+  @apply text-indigo-600 text-left font-bold uppercase relative px-4 bg-general;
+}
+.service-box {
+  @apply bg-general shadow-btn_shadow rounded-md cursor-pointer p-7 flex flex-col gap-3;
+}
+.box-wrap {
+  @apply bg-general shadow-btn_shadow rounded-md cursor-pointer py-8 px-8 text-center;
+}
+
+.contact-box {
+  @apply bg-general shadow-btn_shadow rounded-md p-6 flex items-center justify-center;
+}
+
+.form-input {
+  @apply w-full h-14 bg-general rounded-lg border border-solid border-gray-400 text-xl py-0 px-5 leading-10 font-nunito  font-normal shadow-none outline-none;
+}
+.form-footer-input {
+  @apply w-full h-14 bg-general rounded-lg border border-solid border-gray-400 text-[16px] py-0 px-5 leading-10 font-nunito  font-normal shadow-none outline-none;
+}
+.textarea {
+  @apply w-full h-32  bg-general rounded-lg border border-solid border-gray-400 text-xl py-4 px-5 leading-10 font-nunito  font-normal shadow-none outline-none overflow-auto resize-none  my-6;
+}
+
+.img-border {
+  @apply w-full relative min-w-full;
+}
+/* @layer utilities {
+  .section-title::before {
+    @apply absolute content-[''] h-1 bottom-1 -left-14 bg-depink -z-100 w-calc(100% + 80px);
+  }
+} */
