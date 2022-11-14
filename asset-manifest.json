@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.4f09adaa.css",
+    "main.js": "/portfolio/static/js/main.24e4156f.js",
+    "static/media/footer_logo.png": "/portfolio/static/media/footer_logo.ead0bf7201d0b5e7e4a2.png",
+    "static/media/masterwave_logo.png": "/portfolio/static/media/masterwave_logo.76f92f8f8baa1fe5c4a7.png",
+    "static/media/hero.png": "/portfolio/static/media/hero.caa3d5e2872e84d77cf2.png",
+    "static/media/project1.webp": "/portfolio/static/media/project1.d9d1d6d491f594db0e5f.webp",
+    "static/media/Audu's Resume.pdf": "/portfolio/static/media/Audu's Resume.dff0a985a25ed80c5914.pdf",
+    "static/media/optimization.png": "/portfolio/static/media/optimization.4a89106681ff6f098890.png",
+    "static/media/blockchain.png": "/portfolio/static/media/blockchain.5b2de6341d1bffea62b7.png",
+    "static/media/internet.png": "/portfolio/static/media/internet.6e707eb5f53567feefc4.png",
+    "static/media/about.jpg": "/portfolio/static/media/about.ed70c3ecf9088ca92960.jpg",
+    "static/media/project4.webp": "/portfolio/static/media/project4.f7566bf8e4784dcf404c.webp",
+    "static/media/masterwave.png": "/portfolio/static/media/masterwave.d19787509200f94c7b6d.png",
+    "static/media/ux.png": "/portfolio/static/media/ux.8b9cf2353522e857082f.png",
+    "static/media/project3.webp": "/portfolio/static/media/project3.2d20c9e476f04ceb26de.webp",
+    "static/media/developer.png": "/portfolio/static/media/developer.3634f035b4d4f8ec8d35.png",
+    "static/media/project2.webp": "/portfolio/static/media/project2.7b39af2f2287d31b6ba9.webp",
+    "static/media/marketing-strategy.png": "/portfolio/static/media/marketing-strategy.abd8ae894038ca667513.png",
+    "static/media/slick.svg": "/portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/portfolio/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/close.svg": "/portfolio/static/media/close.c77f10e4c08d40af5f1ccf25a43b2ac5.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/menu.svg": "/portfolio/static/media/menu.0b8796dcff6b9d88f160a5096039aa18.svg",
+    "main.4f09adaa.css.map": "/portfolio/static/css/main.4f09adaa.css.map",
+    "main.24e4156f.js.map": "/portfolio/static/js/main.24e4156f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f09adaa.css",
+    "static/js/main.24e4156f.js"
+  ]
+}
