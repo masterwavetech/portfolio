@@ -28,7 +28,7 @@ const ProjectCard = ({ item }) => {
               alt=""
             />
             <figcaption className="card__figcaption  text-black dark:text-white">
-              MongoDB
+              Mongo
             </figcaption>
           </figure>
           <figure className="card__lang-fig">

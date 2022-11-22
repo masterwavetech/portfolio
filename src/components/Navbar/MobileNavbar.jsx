@@ -54,6 +54,14 @@ const MobileNavbar = () => {
               >
                 Portfolio
               </Link>
+              <Link
+                to="#Contact"
+                smooth
+                className="nav_link dark:text-white hover:text-red-500 mr-4 dark:hover:hover:text-red-500"
+                href="/"
+              >
+                Contact
+              </Link>
             </nav>
             <div className="mt-[24px] flex justify-between items-center rounded-lg py-[12px] px-[14px] bg-toggle">
               <p className="leading-6 text-[16px] font-medium dark:text-white hover:text-red-500 mr-4 dark:hover:hover:text-red-500">
