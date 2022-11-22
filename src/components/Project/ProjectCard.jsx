@@ -1,69 +1,85 @@
 import React from "react";
 
-const ProjectCard = (props) => {
+const ProjectCard = ({ item }) => {
   return (
-    <div className="card__side">
-      <div className="card-top">
-        <figure className="card__img">
-          <img className="card__picture" src={props.img} alt="oville" />
-        </figure>
-      </div>
-      <div className="flex flex-col">
-        <h4 className="text-[24px] text-center pt-4 text-white font-bold sm:text-[24px]">
-          Portfolio
-        </h4>
-        <div className="card__lists">
-          <div className="card__lists__text">dfdf</div>
-          <div className="card__lists__text">dfdf</div>
-        </div>
-        <div className="card__links">
-          <div className="card__demo">
-            <div>
-              <a target="_blank" rel="noopener noreferrer" href="/">
-                Demo
-              </a>
-            </div>
-          </div>
-          <div className="card__github">
-            <div>
-              <a target="_blank" rel="noopener noreferrer" href="/">
-                Github
-              </a>
-            </div>
+    <div className="w-full mr-[24px] sm:w-[355px] ">
+      <div className="project-item">
+        <div className="relative mb-[24px]">
+          <img
+            className="projct-image"
+            src="https://i.ibb.co/3NDGB6v/project-img.jpg"
+            alt=""
+          />
+          <div className="project-link">
+            <a href="/">
+              <i className="fa fa-eye" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
-        <div className="card__lang">
+        <h6 className="dark:text-white">Portfolio</h6>
+        <p className="text-black dark:text-white">
+          Digital agency website design and development
+        </p>
+        <div className="project-lang">
           <figure className="card__lang-fig">
             <img
               className="card__lang-img"
-              src="https://cdn.iconscout.com/icon/free/png-512/node-js-1-1174935.png"
+              src="https://i.ibb.co/gSzcK5d/png-transparent-green-grass-mongodb-database-documentoriented-database-dashboard-nosql-bson-javascri.png"
               alt=""
             />
-            <figcaption className="card__figcaption">Node</figcaption>
+            <figcaption className="card__figcaption  text-black dark:text-white">
+              MongoDB
+            </figcaption>
           </figure>
           <figure className="card__lang-fig">
             <img
               className="card__lang-img"
-              src="https://olumorin-samuel.web.app/assets/images/icons/MongoDB.jpeg"
+              src="https://i.ibb.co/PjVKf0q/136-1363736-express-js-icon-png-transparent-png.jpg"
               alt=""
             />
-            <figcaption className="card__figcaption">MongoDB</figcaption>
+            <figcaption className="card__figcaption  text-black dark:text-white">
+              Express
+            </figcaption>
           </figure>
           <figure className="card__lang-fig">
             <img
               className="card__lang-img"
-              src="https://olumorin-samuel.web.app/assets/images/icons/React.webp"
+              src="https://i.ibb.co/h2rqc5h/React.webp"
               alt=""
             />
-            <figcaption className="card__figcaption">React</figcaption>
+            <figcaption className="card__figcaption  text-black dark:text-white">
+              React
+            </figcaption>
           </figure>
           <figure className="card__lang-fig">
             <img
               className="card__lang-img"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNvlAM2kg5H1ufCzBW7GjzCo77Ys_neYxOHQ&amp;usqp=CAU"
+              src="https://i.ibb.co/ZBmSJ5P/node-js-1-1174935.png"
               alt=""
             />
-            <figcaption className="card__figcaption">Express</figcaption>
+            <figcaption className="card__figcaption  text-black dark:text-white">
+              Node
+            </figcaption>
+          </figure>
+          <figure className="card__lang-fig">
+            <img
+              className="card__lang-img"
+              src="https://i.ibb.co/PjVKf0q/136-1363736-express-js-icon-png-transparent-png.jpg"
+              alt=""
+            />
+            <figcaption className="card__figcaption  text-black dark:text-white">
+              Express
+            </figcaption>
+          </figure>
+          <figure className="card__lang-fig">
+            <img
+              className="card__lang-img"
+              src="https://i.ibb.co/tZ6srKR/png-transparent-tailwind-css-hd-logo.png"
+              alt=""
+            />
+            <figcaption className="card__figcaption  text-black dark:text-white">
+              Tailwind
+            </figcaption>
           </figure>
         </div>
       </div>

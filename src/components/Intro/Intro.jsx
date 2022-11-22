@@ -4,14 +4,14 @@ import Typed from "react-typed";
 
 const Intro = () => {
   return (
-    <section className="relative dark:bg-slate-900">
+    <section className="p-4 sm:p-8 relative dark:bg-slate-900">
       <div className="container flex flex-col lg:flex-row overflow-hidden">
         <div className="w-full flex flex-col gap-4 mt-20 lg:w-1/2">
           <h3 className="font-thin tracking-wide dark:text-white">
             WELCOME TO MY WORLD
           </h3>
           <h1 className="text-3xl font-bold text-indigo-900 md:text-4xl">
-            Hi, I'm Masterwave
+            Hi, I'm Audu Goodness
           </h1>
           <h2 className="text-depink text-3xl md:text-5xl font-bold">
             <Typed
@@ -95,7 +95,7 @@ const Intro = () => {
         <div className="w-full lg:w-1/2 mt-20 relative">
           <div className="bg-btn_shadow shadow-btn_shadow rounded-xl w-full h-100 mx-auto md:h-101 lg:w-101 lg:float-right overflow-hidden relative dark:shadow-none">
             <img
-              className="absolute top-0 left-0 right-0 mx-auto w-100"
+              className="absolute top-0 left-0 right-0 mx-auto w-100 h-100 sm:h-auto"
               src={pic}
               alt="Masterwave"
             />

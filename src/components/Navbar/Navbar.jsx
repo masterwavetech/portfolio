@@ -4,21 +4,28 @@ import DesktopNavbar from "./DesktopNavbar";
 import MobileNavbar from "./MobileNavbar";
 
 const Navbar = () => {
+  // fixed Header
+  window.addEventListener("scroll", function () {
+    const header = document.querySelector(".header");
+    header.classList.toggle("active", window.scrollY > 100);
+  });
   return (
-    <div className="w-full overflow-hidden dark:bg-slate-900">
-      <div className="flex items-center justify-center">
-        <nav className="w-full flex items-center justify-between">
-          <img
-            src={logo}
-            alt="Masterwave"
-            title="Masterwave"
-            className="w-[180px] h-[60px] cursor-pointer"
-          />
-          <DesktopNavbar />
-          <MobileNavbar />
-        </nav>
+    <header className="header">
+      <div className="navbar">
+        <div className="flex-center">
+          <nav className="w-full flex-between">
+            <img
+              src={logo}
+              alt="Masterwave"
+              title="Masterwave"
+              className="header-logo"
+            />
+            <DesktopNavbar />
+            <MobileNavbar />
+          </nav>
+        </div>
       </div>
-    </div>
+    </header>
   );
 };
 

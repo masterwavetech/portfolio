@@ -8,7 +8,6 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Poppins", sans-serif;
   background-color: #ecf0f3;
 }
 .container {
@@ -22,7 +21,6 @@ body {
   line-height: 24px;
   font-size: 16px;
   font-weight: 500;
-  transition: border-color 0.5s, color 0.25s;
 }
 
 .right_img {
@@ -36,7 +34,10 @@ body {
 
 .btn_shadow,
 .service-box {
-  transition: "0.5s";
+  transition: 0.5s all ease;
+}
+.box-wrap {
+  transition: 0.5s all ease;
 }
 .btn_shadow:hover {
   background: #ff014f;
@@ -69,11 +70,6 @@ body {
   left: -60px;
   background: #4f46e5;
   z-index: -1;
-}
-
-.box-wrap {
-  transition: 0.3s all ease;
-  transition: 0.5s;
 }
 
 .wrapper {
@@ -142,132 +138,117 @@ body {
   object-fit: cover;
   border-radius: 6px;
 }
-
-.card__side {
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
-  color: #fff;
-  font-size: 2rem;
-  height: 30rem;
-  transition: all 1s ease;
-  width: 350px;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  border-radius: 1rem;
-  overflow: hidden;
-}
-.card-top {
-  height: 40%;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+.project-item {
+  border-radius: 6px !important;
+  padding: 24px !important;
+  height: 100% !important;
+  border: 1px solid #dee2e6 !important;
 }
 
-.card__img {
-  grid-column: 1/-1;
-  grid-row: 1/-1;
-  overflow: hidden;
-}
-
-.card__picture {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 1rem 1rem 0 0;
-  overflow: hidden;
-}
-
-.card__lists {
-  list-style: none;
-  margin: 0 10px 0;
-}
-
-.card__side .card__lists .card__lists__text {
-  font-size: 20px;
-  color: white;
-  text-align: center;
-  margin-bottom: 8px;
-  padding: 6px;
-  width: 60%;
-  margin: auto;
-  border-bottom: 2px solid #737373;
-}
-
-.card__links {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-bottom: 0.8rem;
-}
-
-.card__links a {
-  color: #fff;
-  font-size: 1rem;
-  padding: 10px 0 10px 5px;
-  text-decoration: underline;
-}
-.card__demo,
-.card__github {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.card__icon {
-  width: 10px;
-  height: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card__lang {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: auto;
-}
-
-.card__lang-fig {
-  width: 2rem;
-  height: 2rem;
-}
-.card__lang-img {
+.project-item .project-link {
+  background: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
-  display: block;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-.card__figcaption {
-  font-size: 1rem;
-}
-
-.slick-list {
-  margin-left: -27px;
-}
-
-.slide ul {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  color: #ffffff;
   position: absolute;
-  bottom: -70px;
-}
-.slide ul li {
-  border: 2px solid #b8b7b7;
-  border-radius: 50%;
-  padding: 10px;
-}
-.slide ul li button {
-  background: transparent !important;
-  color: transparent !important;
-}
-.slide ul li button::before {
-  font-size: 15px !important;
-  color: #0f3460;
-  position: absolute;
-  top: 2px;
+  top: 0;
   left: 0;
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.project-item:hover .project-link {
+  opacity: 1;
+}
+
+.project-item .project-link .fa {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.project-item .projct-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px !important;
+}
+
+.project-item h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #111;
+  text-transform: capitalize;
+}
+
+.project-item p {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.project-item .project-lang {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.project-lang .card__lang-fig {
+  height: 20px;
+  width: 20px;
+}
+
+.project-lang .card__lang-img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.project-lang .card__figcaption {
+  font-size: 11px;
+}
+.project-carousel {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 90px;
+  width: 100%;
+}
+
+.project-carousel .project-dot {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dee2e6;
+  padding: 20px;
+  margin: 50%;
+  border-radius: 50%;
+}
+
+.project-carousel .project-dot:hover {
+  border-color: #ff014f;
+  color: #fff;
+  background: #ff014f;
+}
+.slick-slider .slick-dots li {
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 footer {
@@ -363,6 +344,19 @@ footer .copywrite {
   font-size: 16px;
   text-align: center;
   align-self: center;
+}
+.header {
+  width: 100%;
+}
+.header.active {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #ecf0f3;
+
+  box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.75);
+  transition: 0.5s;
 }
 @media screen and (max-width: 768px) {
   .card__side {

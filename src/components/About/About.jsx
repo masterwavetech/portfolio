@@ -6,7 +6,10 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div className="relative mt-20 dark:bg-slate-900" id="About">
+    <section
+      className="p-4 sm:p-8 relative  mt-20 dark:bg-slate-900"
+      id="About"
+    >
       <div className="container flex flex-col lg:flex-row items-center gap-5">
         <div className="w-full lg:w-1/2 relative">
           <div className="img-border">
@@ -55,7 +58,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

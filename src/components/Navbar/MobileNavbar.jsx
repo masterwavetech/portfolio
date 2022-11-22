@@ -18,7 +18,7 @@ const MobileNavbar = () => {
         <div
           className={`${
             !toggle ? "hidden" : "fixed"
-          } bg-general absolute top-20 right-0 left-0 bottom-0 py-0 px-[23px] w-full dark:bg-slate-900 z-50`}
+          } bg-general absolute top-20 right-0 left-0 bottom-0 py-0 px-[23px] w-full h-screen dark:bg-slate-900 z-[50]`}
         >
           <div className="my-0 mx-auto px-0 pt-[24px] pb-[96px] max-w-[288px]">
             <nav className="block ">

@@ -1,10 +1,6 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import Slider from "react-slick";
-import project1 from "../../img/project1.webp";
-import project2 from "../../img/project2.webp";
-import project3 from "../../img/project3.webp";
-import project4 from "../../img/project4.webp";
 
 const Project = () => {
   const settings = {
@@ -14,9 +10,17 @@ const Project = () => {
     speed: 900,
     slidesToShow: 3,
     slidesToScroll: 1,
-    appendDots: (dots) => {
-      return <ul style={{ margin: "0px" }}>{dots}</ul>;
+
+    customPaging: function (i) {
+      return (
+        <div className="project-carousel">
+          <div className="project-dot text-black dark:text-white ml-2">
+            {`0${i + 1}`}
+          </div>
+        </div>
+      );
     },
+
     responsive: [
       {
         breakpoint: 800,
@@ -37,7 +41,10 @@ const Project = () => {
     ],
   };
   return (
-    <div className="relative mt-20 dark:bg-slate-900" id="Project">
+    <section
+      className="p-4 sm:p-8 relative mt-20 dark:bg-slate-900"
+      id="Project"
+    >
       <div className="flex flex-col gap-3 items-center justify-center">
         <h1 className="section-title dark:bg-slate-900 dark:text-indigo-900">
           project
@@ -48,15 +55,15 @@ const Project = () => {
       </div>
       <div className="slide container py-9 dark:bg-slate-900">
         <Slider {...settings}>
-          <ProjectCard img={project1} />
-          <ProjectCard img={project2} />
-          <ProjectCard img={project3} />
-          <ProjectCard img={project4} />
-          <ProjectCard img={project2} />
-          <ProjectCard img={project4} />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
         </Slider>
       </div>
-    </div>
+    </section>
   );
 };
 

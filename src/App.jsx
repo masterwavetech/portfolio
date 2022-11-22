@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const App = () => {
   useEffect(() => {
-    document.title = "Audu Goodness || Software Developer";
+    document.title = "Audu Goodness || A Web Developer";
   });
   return <Homepage />;
 };

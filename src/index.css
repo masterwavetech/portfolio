@@ -4,6 +4,24 @@
 @tailwind components;
 @tailwind utilities;
 
+.body {
+  @apply bg-general font-nunito   dark:bg-slate-900;
+}
+
+.navbar {
+  @apply w-full p-4 sm:p-8  overflow-hidden dark:bg-slate-900;
+}
+
+.header-logo {
+  @apply w-[180px] h-[60px] cursor-pointer;
+}
+.flex-center {
+  @apply flex justify-center items-center;
+}
+.flex-between {
+  @apply flex justify-between items-center;
+}
+
 .btn {
   @apply bg-btn_shadow shadow-btn_shadow w-10 h-10 rounded-half cursor-pointer text-black m-1;
 }

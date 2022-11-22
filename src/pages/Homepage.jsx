@@ -11,19 +11,19 @@ import GoToTop from "../components/GoToTop/GoToTop.jsx";
 
 const Homepage = () => {
   return (
-    <div className="font-nunito dark:bg-slate-900">
-      <div className="p-4 sm:p-8">
+    <>
+      <div className="body">
         <Navbar />
         <Intro />
         <About />
         <Service />
-        <Ferature />
         <Project />
+        <Ferature />
         <Contact />
+        <Footer />
+        <GoToTop />
       </div>
-      <Footer />
-      <GoToTop />
-    </div>
+    </>
   );
 };
 

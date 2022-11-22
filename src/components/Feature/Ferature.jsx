@@ -2,7 +2,7 @@ import React from "react";
 
 const Ferature = () => {
   return (
-    <div className="relative mt-20 dark:bg-slate-900">
+    <section className="p-4 sm:p-8 relative mt-20 dark:bg-slate-900">
       <div className="container flex flex-col lg:flex-row">
         <div className="w-full lg:w-1/2 relative">
           <h4 className="uppercase font-bold text-sm text-depink">
@@ -103,7 +103,7 @@ const Ferature = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

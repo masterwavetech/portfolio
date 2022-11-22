@@ -2,15 +2,19 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="relative mt-20 dark:bg-slate-900" id="Contact">
+    <section className="relative mt-20 dark:bg-slate-900" id="Contact">
       <div className="flex flex-col gap-3 items-center justify-center">
-        <h1 className="text-4xl text-cynan text-center font-bold dark:text-white capitalize">
+        <h1 className="section-title dark:bg-slate-900 dark:text-indigo-900">
+          contact
+        </h1>
+        <h1 className="text-2xl  text-cynan text-center font-bold dark:text-white capitalize">
           WE'RE 24/7
         </h1>
-        <p className="text-gray-400 text-lg text-center">
+        <p className="text-gray-400 container text-lg text-center">
           Ready when you are. Let's work together.
         </p>
       </div>
+
       <div className="container flex flex-col gap-10">
         <div className="p-5 grid lg:grid-cols-3 md:grid-cols-2 gap-6">
           <div className="contact-box  dark:bg-slate-900 dark:shadow-md">
@@ -97,7 +101,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -4,7 +4,7 @@ import { HashLink as Link } from "react-router-hash-link";
 const Footer = () => {
   return (
     <>
-      <footer className="dark:bg-slate-900">
+      <footer className=" dark:bg-slate-900">
         <div className="container">
           <div className="flex flex-col ml-6 sm:ml-0">
             <h4 className="font-normal dark:text-white mb-4 text-xl">
@@ -78,28 +78,28 @@ const Footer = () => {
             <Link
               to="#About"
               smooth
-              className="footer-link text-gray-400 dark:text-gray-400"
+              className="footer-link text-gray-400 hover:text-red-500 mr-4 dark:hover:hover:text-red-500 dark:text-gray-400"
             >
               About
             </Link>
             <Link
               to="#Service"
               smooth
-              className="footer-link text-gray-400 dark:text-gray-400"
+              className="footer-link text-gray-400 hover:text-red-500 mr-4 dark:hover:hover:text-red-500 dark:text-gray-400"
             >
               Service
             </Link>
             <Link
               to="#Project"
               smooth
-              className="footer-link text-gray-400 dark:text-gray-400"
+              className="footer-link text-gray-400 hover:text-red-500 mr-4 dark:hover:hover:text-red-500 dark:text-gray-400"
             >
               Project
             </Link>
             <Link
               to="#Contact"
               smooth
-              className="footer-link text-gray-400 dark:text-gray-400"
+              className="footer-link text-gray-400 hover:text-red-500 mr-4 dark:hover:hover:text-red-500 dark:text-gray-400"
             >
               Contact
             </Link>
@@ -141,7 +141,7 @@ const Footer = () => {
               </div>
               <div className="img-container ">
                 <img
-                  src="https://demo.htmlcodex.com/pro/dgcom/img/project-6.jpg"
+                  src="https://demo.htmlcodex.com/pro/dgcom/img/project-2.jpg"
                   alt=""
                 />
               </div>

@@ -6,7 +6,7 @@ const DesktopNavbar = () => {
   return (
     <>
       <div className="hidden sm:flex justify-between items-center">
-        <ul className="list-none  sm:flex  justify-end items-center flex-1">
+        <ul className="list-none  sm:flex-1 flex  justify-end items-center">
           <Link to="/" smooth>
             <li className="font-nunito font-normal cursor-pointer text-[14px]  dark:text-white hover:text-red-500 mr-4 dark:hover:hover:text-red-500">
               Home

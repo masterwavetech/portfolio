@@ -7,7 +7,10 @@ import Icon5 from "../../img/ux.png";
 import Icon6 from "../../img/marketing-strategy.png";
 const Service = () => {
   return (
-    <div className="relative mt-20 dark:bg-slate-900" id="Service">
+    <section
+      className="p-4 sm:p-8 relative mt-20 dark:bg-slate-900"
+      id="Service"
+    >
       <div className="flex flex-col gap-3 items-center justify-center">
         <h1 className="section-title dark:bg-slate-900 dark:text-indigo-900">
           SERVICES
@@ -98,7 +101,7 @@ const Service = () => {
           </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
